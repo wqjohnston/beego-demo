@@ -33,8 +33,8 @@ func (c *AliyunController) InitVodClient(accessKeyId string, accessKeySecret str
 	regionId := "cn-shanghai"
 	// 创建授权对象
 	credential := &credentials.AccessKeyCredential{
-		AccessKeyId:     accessKeyId,
-		AccessKeySecret: accessKeySecret,
+		accessKeyId,
+		accessKeySecret,
 	}
 	// 自定义config
 	config := sdk.NewConfig()
